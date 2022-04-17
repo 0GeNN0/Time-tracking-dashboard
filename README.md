@@ -31,14 +31,14 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 - ## Screenshot
    - Front
-    ![screenshots-1](screenshots/Screenshot%202022-04-13%20090331.png)
+    ![screenshots-1](screenshoots/Screenshot%202022-04-17%20143438.png)
    - Back 
-    ![screenshots-2](screenshots/Screenshot%202022-04-13%20090426.png)
+    ![screenshots-2](screenshoots/Screenshot%202022-04-17%20143547.png)
 
 - ### Links
 
-   - Solution URL: [Here](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/responsive-card-with-html5-css3-flex-box-js-rJRBKWEEq)
-   - Live Site URL: [Here](https://0genn0.github.io/Responsive-card-with-js/)
+   - Solution URL: [Here](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/resonsive-time-tracking-dashboard-with-grid-and-flex-H1_octYNq)
+   - Live Site URL: [Here](https://0genn0.github.io/Time-tracking-dashboard/)
 
 ## My process
 
