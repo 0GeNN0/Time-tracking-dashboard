@@ -1,0 +1,372 @@
+:root {
+   --Blue: hsl(246, 80%, 60%);
+   --Light-red-W: hsl(15, 100%, 70%);
+   --Soft-blue-P: hsl(195, 74%, 62%);
+   --Light-red-ST: hsl(348, 100%, 68%);
+   --Lime-green-E: hsl(145, 58%, 55%);
+   --Violet-SL: hsl(264, 64%, 52%);
+   --Soft-orange-SC: hsl(43, 84%, 65%);
+   --Very-dark-blue: hsl(226, 43%, 10%);
+   --Dark-blue: hsl(235, 46%, 20%);
+   --Desaturated-blue: hsl(235, 45%, 61%);
+   --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border-radius: 20px;
+}
+
+html {
+   font-family: 'Rubik', sans-serif;
+   color: white;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--Very-dark-blue);
+}
+
+.container {
+   width: 80%;
+   margin: auto;
+   padding: 15px 0;
+}
+
+#work {
+   background: var(--Light-red-W);
+}
+
+#play {
+   background: var(--Soft-blue-P);
+}
+
+#study {
+   background: var(--Light-red-ST);
+}
+
+#exercise {
+   background: var(--Lime-green-E);
+}
+
+#social {
+   background: var(--Violet-SL);
+}
+
+#care {
+   background: var(--Soft-orange-SC);
+}
+
+main {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 30px;
+}
+main {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 30px;
+}
+
+section {
+   position: relative;
+}
+
+.person {
+   grid-row: span 2;      
+   background: var(--Dark-blue);
+}
+
+.person .info {
+   background-color: var(--Blue);
+}
+
+.person .info .container {
+   display: flex;
+   flex-direction: column;
+}
+
+.person .info img {
+   width: 100px;
+   border: 5px solid;
+   border-radius: 50%;
+   margin: 30px 0 50px;
+}
+
+.person .info .text h1 {
+   font-size: 3em;
+   font-weight: 300;
+   margin-bottom: 65px;
+}
+
+.person .info .text p {
+   color: var(--Pale-Blue);
+}
+
+.person .container .render-by {
+   display: flex;
+   flex-direction: column;
+}
+
+.render-by p {
+   color: var(--Soft-blue-P);
+   padding: 15px 0;
+   cursor: pointer;
+   width: fit-content;
+}
+
+.render-by p.active {
+   color: white;
+}
+
+section:not(.person) .card:hover {
+   background-color: #34397b;
+}
+
+section > img {
+   position: absolute;
+   right: 20px;
+}
+
+section .card {
+   height: calc(100% - 50px);
+   background: var(--Dark-blue);
+   position: absolute;
+   width: 100%;
+   top: 50px;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header h2 {
+   padding: 15px 0 0;
+   font-weight: 500;
+   font-size: 20px;
+}
+
+ul {
+   width: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+
+ul li {
+   width: 5px;
+   height: 5px;
+   background-color: var(--Pale-Blue);
+   cursor: pointer;
+}
+
+ul:hover li {
+   background: white;
+}
+
+.card .container .text {
+   padding: 20px 0;
+}
+
+.current {
+   font-size: 5em;
+   font-weight: 300;
+}
+
+.previous {
+   color: var(--Pale-Blue);
+   padding: 10px 0;
+   font-size: 18px;
+}
+
+.attribution {
+   position: absolute;
+   width: 100%;
+   bottom: 10px;
+   right: 0;
+   font-size: 17px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+   text-decoration: none;
+}
+
+.attribution a:hover {
+   color: var(--Pale-Blue);
+}
+
+@media (max-width: 992px) {
+   body > footer {
+      display: none;
+   }
+}
+
+@media (max-width: 767px) {
+   .container {
+      width: 90%;
+   }
+   main {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+   }
+   main .person {
+      width: 100%;
+   }
+   .person .info {
+      padding: 25px 0;
+   }
+   .person .info .container {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+   .person .info img {
+      width: 70px;
+      border: 3px solid;
+      margin: 0;
+   }
+   .person .info .text h1 {
+      font-size: 27px;
+      margin-bottom: 0;
+   }
+   .person .container .render-by {
+      width: 80%;
+      margin: auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+   }
+   .person .container .render-by p {
+      padding: 0;
+   }
+   section:not(.person) {
+      height: 200px;
+   }
+   header {
+      padding: 10px 10px 0;
+      margin-top: 10px;
+   }
+   header h2 {
+      padding: 0;
+   }
+   .card .container .text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 10px;
+   }
+   .card .container .text p.current {
+      font-size: 2.5em;
+   }
+   .previous {
+      font-size: 17px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   main {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .person {
+      flex-basis: 100%;
+   }
+   .person .info .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0;
+   }
+   .person .info .container h1 {
+      margin-bottom: 0;
+   }
+   .person .container .render-by {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   section:not(.person) {
+      flex-basis: 45%;
+      height: 250px;
+   }
+   header {
+      padding: 10px 10px;
+      margin-top: 10px;
+   }
+   header h2 {
+      padding: 0;
+   }
+   .card .container .text {
+      padding: 10px 10px;
+   }
+   .card .container .text p.current {
+      font-size: 3em;
+   }
+   .previous {
+      font-size: 17px;
+   }
+   body > footer {
+      position: relative;
+      flex-basis: 100%;
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+   main {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   .person {
+      flex-basis: 100%;
+   }
+   .person .info .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0;
+   }
+   .person .info .container h1 {
+      margin-bottom: 0;
+      font-size: 3.5em;
+   }
+   .person .container .render-by {
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   section:not(.person) {
+      flex-basis: 30%;
+      height: 250px;
+   }
+   header {
+      margin-bottom: 10px;
+   }
+   .card .container .text {
+      padding: 15px 0;
+   }
+   .card .container .text p.current {
+      font-size: 3em;
+    }
+   .previous {
+      font-size: 20px;
+    }
+}
