@@ -187,8 +187,8 @@ ul:hover li {
 }
 
 body > footer {
-   position: fixed;
-   bottom: 20px;
+   position: static;
+   padding: 10px;
 }
 
 .attribution {
@@ -316,10 +316,6 @@ body > footer {
    }
    .previous {
       font-size: 17px;
-   }
-   body > footer {
-      position: relative;
-      flex-basis: 100%;
    }
 }
 
