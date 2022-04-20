@@ -25,9 +25,10 @@ html {
 }
 
 body {
-   height: 100vh;
+   min-height: 100vh;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   justify-content: space-around;
    align-items: center;
    background-color: var(--Very-dark-blue);
 }
@@ -63,12 +64,8 @@ body {
 }
 
 main {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   gap: 30px;
-}
-main {
+   padding: 20px 0 10px;
+   max-width: 1200px;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: repeat(2, 1fr);
@@ -190,10 +187,7 @@ ul:hover li {
 }
 
 .attribution {
-   position: absolute;
-   width: 100%;
-   bottom: 10px;
-   right: 0;
+   padding: 10px;
    font-size: 17px;
    text-align: center;
 }
@@ -205,12 +199,6 @@ ul:hover li {
 
 .attribution a:hover {
    color: var(--Pale-Blue);
-}
-
-@media (max-width: 992px) {
-   body > footer {
-      display: none;
-   }
 }
 
 @media (max-width: 767px) {
@@ -275,6 +263,9 @@ ul:hover li {
    }
    .previous {
       font-size: 17px;
+   }
+   .attribution {
+      font-size: 15px;
    }
 }
 
