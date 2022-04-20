@@ -28,7 +28,7 @@ body {
    min-height: 100vh;
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
    background-color: var(--Very-dark-blue);
 }
@@ -64,7 +64,7 @@ body {
 }
 
 main {
-   padding: 20px 0 10px;
+   padding: 20px 0;
    max-width: 1200px;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
@@ -186,8 +186,12 @@ ul:hover li {
    font-size: 18px;
 }
 
+body > footer {
+   position: fixed;
+   bottom: 20px;
+}
+
 .attribution {
-   padding: 10px;
    font-size: 17px;
    text-align: center;
 }
